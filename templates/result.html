@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+</head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<body>
+    <h1><p style="text-align:center"> <a href="index.html"> Diabetes Prediction </a></p></h1>
+    <h2> Results </h2>
+
+    {% if prediction == 1 %}
+    <h2 style="text-align: center; color: red;"> Sorry you have Diabetes...Please consult the doctor.</h2>
+   <!-- <center><img src="https://aihubprojects.com/wp-content/uploads/2021/04/diab.jpg" width="275" height="183" alt="Image not supported"> </center> -->
+   <center><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfr1GyB6rxBgL90g0ZWfq7360CfcxWWoYY8w&usqp=CAU"  alt="Image not supported"> </center>
+
+
+    {% elif prediction == 0 %}
+    <h2 style="text-align: center; color:green"> Congratulations you don't have the Diabetes.</h2>
+    <center><img src="https://miro.medium.com/max/1085/1*a8yfdcQcStAiLYr9qCdcBA.jpeg" width="275" height="183" alt="Image not supported"></center>
+
+    {% endif %}
+</body>
+</html>

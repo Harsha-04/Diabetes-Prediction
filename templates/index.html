@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes Prediction</title>
+</head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<body>
+    <h1><p style="text-align:center"> <a href="/"> Diabetes Prediction </a></p></h1>
+    <form action="/predict" method="post">
+        <div class="form-group">
+          <input type="text" class="form-control" id="Pregnancies" name="Pregnancies"  placeholder="Enter Pregnancies value">
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" id="Glucose Level" name="Glucose Level" placeholder="Enter Glucose Level">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" id="Blood Pressure" name="Blood Pressure" placeholder="Blood Pressure">
+          </div>
+        <div class="form-group">
+            <input type="text" class="form-control" id="Skin Thickness" name="Skin Thickness" placeholder="Skin Thickness">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" id="Insulin" name="Insulin" placeholder="Insulin">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" id="BMI" name="BMI" placeholder="BMI">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" id="Diabetes PF" name="Diabetes PF" placeholder="Diabetes PF">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" id="Age" name="Age" placeholder="Age">
+        </div>
+        <button type="submit" class="btn btn-primary">Predict</button>
+      </form>
+</body>
+</html>
